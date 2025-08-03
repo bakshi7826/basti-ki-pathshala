@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer – Basti Ki Pathshala</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="volunteer">
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="assets/Basti-Ki-Pathshala-Official-Logo.jpg" alt="Basti Ki Pathshala Logo" class="logo-img">
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="volunteer.html" class="active">Volunteer</a>
+        <a href="#" class="donate-btn">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- VOLUNTEER HERO -->
+  <section class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <h1>Join Our Volunteer Team</h1>
+      <p>Be the change you wish to see in the world</p>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER INFO -->
+  <section class="volunteer-info">
+    <div class="container">
+      <h2 class="section-title">Why Volunteer With Us?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Make a Difference</h3>
+          <p>Directly impact children's lives through education</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Join a Community</h3>
+          <p>Connect with like-minded changemakers</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3>Grow Skills</h3>
+          <p>Develop teaching, leadership and communication skills</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Get Certified</h3>
+          <p>Receive volunteer certification and references</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER ROLES -->
+  <section class="volunteer-roles">
+    <div class="container">
+      <h2 class="section-title">Volunteer Opportunities</h2>
+      <div class="roles-tabs">
+        <button class="tab-btn active" data-tab="teaching">Teaching</button>
+        <button class="tab-btn" data-tab="content">Content Creation</button>
+        <button class="tab-btn" data-tab="fundraising">Fundraising</button>
+        <button class="tab-btn" data-tab="tech">Tech Support</button>
+      </div>
+      
+      <div class="tab-content active" id="teaching">
+        <div class="role-details">
+          <h3>Teaching Volunteer</h3>
+          <p>Help children learn basic subjects like Math, English, and Science. No formal teaching experience required - just patience and enthusiasm!</p>
+          <ul class="role-responsibilities">
+            <li><i class="fas fa-check"></i> Teach 2-3 times per week</li>
+            <li><i class="fas fa-check"></i> Prepare simple lesson plans</li>
+            <li><i class="fas fa-check"></i> Track student progress</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="content">
+        <div class="role-details">
+          <h3>Content Creator</h3>
+          <p>Develop educational materials, worksheets, and learning resources for our students.</p>
+          <ul class="role-responsibilities">
+            <li><i class="fas fa-check"></i> Create engaging learning materials</li>
+            <li><i class="fas fa-check"></i> Adapt content for different age groups</li>
+            <li><i class="fas fa-check"></i> Help with translations (if bilingual)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="fundraising">
+        <div class="role-details">
+          <h3>Fundraising Volunteer</h3>
+          <p>Help us secure resources to expand our programs and reach more children.</p>
+          <ul class="role-responsibilities">
+            <li><i class="fas fa-check"></i> Organize fundraising events</li>
+            <li><i class="fas fa-check"></i> Reach out to potential donors</li>
+            <li><i class="fas fa-check"></i> Manage crowdfunding campaigns</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="tech">
+        <div class="role-details">
+          <h3>Tech Support Volunteer</h3>
+          <p>Help us with website maintenance, digital tools, and implementing tech solutions.</p>
+          <ul class="role-responsibilities">
+            <li><i class="fas fa-check"></i> Website updates and maintenance</li>
+            <li><i class="fas fa-check"></i> Help implement digital learning tools</li>
+            <li><i class="fas fa-check"></i> Tech support for online classes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER FORM -->
+  <section class="volunteer-form-section">
+    <div class="container">
+      <div class="form-container">
+        <h2 class="section-title">Volunteer Application</h2>
+        <p class="form-subtitle">Fill out the form below and we'll get back to you within 48 hours</p>
+        
+        <form id="volunteerForm" class="volunteer-form">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="16">
+          </div>
+          
+          <div class="form-group">
+            <label for="location">City*</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="role">Preferred Volunteer Role*</label>
+            <select id="role" name="role" required>
+              <option value="">Select a role</option>
+              <option value="teaching">Teaching</option>
+              <option value="content">Content Creation</option>
+              <option value="fundraising">Fundraising</option>
+              <option value="tech">Tech Support</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="availability">Availability*</label>
+            <select id="availability" name="availability" required>
+              <option value="">Select availability</option>
+              <option value="weekdays">Weekdays</option>
+              <option value="weekends">Weekends</option>
+              <option value="both">Both</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="experience">Relevant Experience/Skills</label>
+            <textarea id="experience" name="experience" rows="4"></textarea>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="motivation">Why do you want to volunteer with us?*</label>
+            <textarea id="motivation" name="motivation" rows="4" required></textarea>
+          </div>
+          
+          <div class="form-group full-width checkbox-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>*</label>
+          </div>
+          
+          <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/Basti-Ki-Pathshala-Official-Logo.jpg" alt="Basti Ki Pathshala Logo">
+        <p>Educating India's Future</p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> info@bastikipathshala.org</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Basti Ki Pathshala Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
